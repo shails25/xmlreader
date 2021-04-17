@@ -13,11 +13,7 @@ class HomeController extends Controller
     }
 
     public function file_post(Request $request){
-        $data = [
-            "title" => "home page",
-            "text" => "page"
-        ];
-
+      
         try{
             // echo "<pre>";
             $filepath = $request->file('contacts')->getpathName();
